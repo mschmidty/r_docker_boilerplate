@@ -1,0 +1,2 @@
+# A Docker Compose File to Setup and Run R Scripts
+This project is a boilerplate for getting an R project setup in Docker with a `docker-compose.yml` file.  It uses the `{renv}` package for dependency management this working, clone the repo and run `docker-compose up`.  The container will close when the file is finished. 

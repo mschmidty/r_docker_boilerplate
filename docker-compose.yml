@@ -1,0 +1,14 @@
+services: 
+  rstat:
+    image: r-base:4.2.2
+    container_name: rstat
+    working_dir: /home/r_proj/
+    volumes: 
+      - ./r_files:/home/r_proj 
+    command: > 
+      R -e "source('/home/r_proj/renv/activate.R'); renv::restore(); source('test.R');"
+
+  
+volumes:
+  r_files:
+    
